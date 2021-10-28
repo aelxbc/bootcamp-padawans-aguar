@@ -6,3 +6,5 @@ Vinicius Leonardo
 Bárbara Bruna D'Áustole Gelape
 
 Alex Corrêa
+
+Alex Vago
