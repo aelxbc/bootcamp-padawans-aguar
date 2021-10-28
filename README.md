@@ -8,3 +8,5 @@ Bárbara Bruna D'Áustole Gelape
 Alex Corrêa
 
 Alex Vago
+
+Bruno Oliveira
