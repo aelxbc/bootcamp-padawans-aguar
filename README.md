@@ -6,3 +6,9 @@ Vinicius Leonardo
 Bárbara Bruna D'Áustole Gelape
 
 Arthur Bicalho Lana Corrêa Fernandes
+
+Alex Corrêa
+
+Alex Vago
+
+Bruno Oliveira
