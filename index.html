@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nem Guindaste</title>
+    <title>Aguar</title>
+
+    <link href="style.css" rel="stylesheet">
+    
 </head>
 <body>
 
-    <form action="">
+<div class="baform"><h1> Formulário de Ocorrência</h1></div>
+<div class="main">
+
+    <form>
+
+    <div id="name">
+        <h2 class="name">Nome</h2>
+        <input class="firstname" type="text" name="first_name"recquired placeholder="Nome"><br>
+        <input class="lastname" type="text" name="last_name"recquired placeholder="Sobrenome">
+        
+    </div>
+
+    <h2 class="name"> E-mail </h2>
+    <input class="email" type="text" name="email"recquired placeholder="E-mail">
+
+    <div id="name">
+        <h2 class="name"> Endereço </h2>
+        <input class="address" type="text" name="address" recquired placeholder="Rua/Avenida">
+        <br>
+        <input class="block" type="text" name="bairro"recquired placeholder="Bairro">
+        
+    </div>
+
+    <div id="name">
+        <h2 class="name"> Cidade/Estado </h2>
+        <input class="city" type="text" name="city" recquired placeholder="Cidade">
+        <br>
+        <input class="state" type="text" name="Estado" recquired placeholder="Estado">
+        
+
+    </div>
+    
+    <div id="name">
+        <h2 class="name">Data e Hora Ocorrência(*)</h2>
+        <input type="datetime-local" value="?php echo data('d-m-Y');?>"
+        class="date" id="date" requiredplaceholder="">        
+    </div>
+
+    <div id="name"> 
+        <h2 class="name">Tipos de Ocorrência(*)</h2>s
+        <select class="types">
+            <option selected>Escolha...</option>
+            <option value="1">Vazamento de água</option>
+            <option value="2">Água Contaminada</option>
+            <option value="3">Falta de Água</option>
+        </select>
+    </div>
+
+  
+
+
+        
+    </form>
+
+
+
+
+</div>
+
+
+
+
+
+    <!-- <form action="">
         <input type="text" placeholder="Digite seu nome">
         <input type="text" placeholder="Endereço">
         <input type="text" placeholder="Data">
@@ -32,7 +98,7 @@
         <h3></h3>
     </div>
     
-    <script src="app.js"></script>
+    <script src="app.js"></script> -->
     
 </body>
 </html> 
