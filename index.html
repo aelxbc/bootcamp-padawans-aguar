@@ -1,107 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>Aguar</title>
 
     <link href="style.css" rel="stylesheet">
-    
+
 </head>
+
 <body>
 
-<div class="baform"><h1> Formulário de Ocorrência</h1></div>
-<div class="main">
+    <div class="baform">
+        <h1> Formulário de Ocorrência</h1>
+    </div>
+    <div class="main">
 
-    <form>
+        <form action="" id="form">
 
-    <div id="name">
-        <h2 class="name">Nome</h2>
-        <input class="firstname" type="text" name="first_name"recquired placeholder="Nome"><br>
-        <input class="lastname" type="text" name="last_name"recquired placeholder="Sobrenome">
-        
+            <div>
+                <h2 class="name">Nome</h2>
+                <input id="first_name" class="firstname" type="text" name="first_name" recquired placeholder="Nome"><br>
+                <input id="last_name" class="lastname" type="text" name="last_name" recquired placeholder="Sobrenome">
+
+            </div>
+
+            <h2 class="name"> E-mail </h2>
+            <input id="email" class="email" type="text" name="email" recquired placeholder="E-mail">
+
+            <div id="name">
+                <h2 class="name"> Endereço </h2>
+                <input id="address" class="address" type="text" name="address" recquired placeholder="Rua/Avenida">
+                <br>
+                <input id="bairro" class="block" type="text" name="bairro" recquired placeholder="Bairro">
+
+            </div>
+
+            <div id="name">
+                <h2 class="name"> Cidade/Estado </h2>
+                <input id="city" class="city" type="text" name="city" recquired placeholder="Cidade">
+                <br>
+                <input id="estado" class="state" type="text" name="estado" recquired placeholder="Estado">
+
+
+            </div>
+
+            <div id="name">
+                <h2 class="name">Data e Hora Ocorrência(*)</h2>
+                <input type="datetime-local" value="?php echo data('d-m-Y');?>" class="date" id="date"
+                    requiredplaceholder="">
+            </div>
+
+            <div id="name">
+                <h2 class="name">Tipos de Ocorrência(*)</h2>s
+                <select id="options" class="types">
+                    <option selected>Escolha...</option>
+                    <option value="Vazamento de Água">Vazamento de água</option>
+                    <option value="Água Contaminada">Água Contaminada</option>
+                    <option value="Falta de Água">Falta de Água</option>
+                </select>
+            </div>
+
+        </form>
+
     </div>
 
-    <h2 class="name"> E-mail </h2>
-    <input class="email" type="text" name="email"recquired placeholder="E-mail">
-
-    <div id="name">
-        <h2 class="name"> Endereço </h2>
-        <input class="address" type="text" name="address" recquired placeholder="Rua/Avenida">
-        <br>
-        <input class="block" type="text" name="bairro"recquired placeholder="Bairro">
-        
+    <div class="button">
+        <input class="button-input" type="submit" onclick="verificar()" />
     </div>
 
-    <div id="name">
-        <h2 class="name"> Cidade/Estado </h2>
-        <input class="city" type="text" name="city" recquired placeholder="Cidade">
-        <br>
-        <input class="state" type="text" name="Estado" recquired placeholder="Estado">
-        
-
-    </div>
-    
-    <div id="name">
-        <h2 class="name">Data e Hora Ocorrência(*)</h2>
-        <input type="datetime-local" value="?php echo data('d-m-Y');?>"
-        class="date" id="date" requiredplaceholder="">        
+    <div id="resultados">
+        <div id="resultado-name"></div>
+        <div id="resultado-email"></div>
+        <div id="resultado-endereco"></div>
+        <div id="resultado-cidade"></div>
+        <div id="resultado-data"></div>
+        <div id="resultado-tipo"></div>
+        <div id="mapContainer"></div>
     </div>
 
-    <div id="name"> 
-        <h2 class="name">Tipos de Ocorrência(*)</h2>s
-        <select class="types">
-            <option selected>Escolha...</option>
-            <option value="1">Vazamento de água</option>
-            <option value="2">Água Contaminada</option>
-            <option value="3">Falta de Água</option>
-        </select>
-    </div>
-
-  
-
-
-        
-    </form>
-
-
-
-
-</div>
-
-
-
-
-
-    <!-- <form action="">
-        <input type="text" placeholder="Digite seu nome">
-        <input type="text" placeholder="Endereço">
-        <input type="text" placeholder="Data">
-        <input type="text" placeholder="Descrição">
-        <input type="text" placeholder="Foto">
-        <input type="text" placeholder="Coordenadas">
-        <button type="submit">Enviar</button>
-    </form>
-
-    <div>
-        <h1>OCORRENCIA #0000</h1>
-        <br>
-        <h3>NOME</h3>
-        <h3>ENDEREÇO</h3>
-        <h3>DATA</h3>
-        <h3>DESCRIÇÃO</h3>
-        <h3>FOTO SENDO EXIBIDA</h3>
-        <h3> CORDENADAS EM MAPA</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127674.16385604824!2d-51.25318595276024!3d-0.033936024643384764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x929e1ccd0eccc4d3%3A0x3ea7d8e0831d8c07!2sPorto%20Santana%2C%20Santana%20-%20AP!5e0!3m2!1spt-BR!2sbr!4v1635422871176!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>PROTOCOLO GERADO</h3>
-        <h3></h3>
-    </div>
-    
-    <script src="app.js"></script> -->
-    
+    <script src="app.js"></script>
 </body>
-</html> 
 
-
-            
+</html>
