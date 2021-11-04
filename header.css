@@ -1,0 +1,32 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: #7f7f7f;
+    margin-bottom: 20px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    transition: .5s;
+    padding: 30px;
+    margin-top: -40px;
+}
+
+.item {
+    transition: .5s;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.item:hover {
+    cursor: pointer;
+    color: #37fcfc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
