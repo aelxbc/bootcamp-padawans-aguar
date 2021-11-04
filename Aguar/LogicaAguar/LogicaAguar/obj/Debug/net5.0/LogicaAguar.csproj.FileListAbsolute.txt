@@ -1,0 +1,16 @@
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.exe
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.deps.json
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.runtimeconfig.json
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.runtimeconfig.dev.json
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.dll
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\ref\LogicaAguar.dll
+C:\dev\Aguar\LogicaAguar\LogicaAguar\bin\Debug\net5.0\LogicaAguar.pdb
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.csproj.AssemblyReference.cache
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.AssemblyInfoInputs.cache
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.AssemblyInfo.cs
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.csproj.CoreCompileInputs.cache
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.dll
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\ref\LogicaAguar.dll
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.pdb
+C:\dev\Aguar\LogicaAguar\LogicaAguar\obj\Debug\net5.0\LogicaAguar.genruntimeconfig.cache
