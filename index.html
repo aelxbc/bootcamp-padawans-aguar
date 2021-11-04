@@ -33,8 +33,10 @@
 
             </div>
 
-            <h2 class="name"> E-mail </h2>
-            <input id="email" class="email" type="text" name="email" recquired placeholder="E-mail">
+            <div>
+                <h2 class="name"> E-mail </h2>
+                <input id="email" class="email" type="text" name="email" recquired placeholder="E-mail">
+            </div>
 
             <div id="name">
                 <h2 class="name"> Endereço </h2>
@@ -50,7 +52,6 @@
                 <br>
                 <input id="estado" class="state" type="text" name="estado" recquired placeholder="Estado">
 
-
             </div>
 
             <div id="name">
@@ -60,7 +61,7 @@
             </div>
 
             <div id="name">
-                <h2 class="name">Tipos de Ocorrência(*)</h2>s
+                <h2 class="name">Tipos de Ocorrência(*)</h2>
                 <select id="options" class="types">
                     <option selected>Escolha...</option>
                     <option value="Vazamento de Água">Vazamento de água</option>
@@ -69,12 +70,12 @@
                 </select>
             </div>
 
-        </form>
-
+                <div class="button">
+        <input class="button-input" type="submit" onclick="verificar()" />
     </div>
 
-    <div class="button">
-        <input class="button-input" type="submit" onclick="verificar()" />
+        </form>
+
     </div>
 
     <div id="resultados">
@@ -88,6 +89,7 @@
     </div>
 
     <script src="app.js"></script>
+
 </body>
 
 </html>

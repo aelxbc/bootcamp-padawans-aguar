@@ -1,46 +1,4 @@
-/*console.log('Hello World!')
-
-// variaveis 
-let nome = "Usuario teste"
-let endereco = "Rua Tal tal tal"
-let data = "28/10/2021"
-let descricao = ""
-let foto_do_local
-let coordenada_x
-let coordenada_y
-let coordenadas
-let protocolo
-
-
-
-function Formulario() {
-
-    
-    console.log(nome)
-
-}
-
-
-    
-function ExibeFormulario() {
-
-}*/
-
-
-//Formulario()
-//ExibeFormulario()
-
-
-
 function verificar() {
-
-  const form = document.getElementById('form')
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    const input = document.getElementById("address").value + ", Brazil"
-    geocodingParams = { searchText: input };
-    geocoder.geocode(geocodingParams, onResult);
-  })
 
   var first_name = document.getElementById("first_name").value;
   var last_name = document.getElementById("last_name").value;
@@ -59,6 +17,7 @@ function verificar() {
   var resultado_data = document.querySelector("div#resultado-data");
   var resultado_tipo = document.querySelector("div#resultado-tipo");
 
+
   if (first_name == '') {
     alert('Error! Você não preencheu todos os dados.')
   } else {
@@ -69,9 +28,17 @@ function verificar() {
     resultado_data.innerHTML = `A data e hora que realizou a sua ocorrência foi: ${date}`
     resultado_tipo.innerHTML = `O tipo de ocorrência que você selecionou foi: ${options}`
 
+    const form = document.getElementById('form')
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const input = document.getElementById("address").value + ", Brazil"
+      geocodingParams = { searchText: input };
+      geocoder.geocode(geocodingParams, onResult);
+    })
+
     // MAPA DE GEOLOCALIZAÇÃO
     var platform = new H.service.Platform({
-      'apikey': 'j6pG018A3FfLcLt0NwVys7BbGZMMAnvoBJU51e7fl0M'
+      'apikey': 'KOxR0V1cxQt2Ve3S55hQ0xaah8RWo1NJefJ4t2F8CJ0'
     });
 
     // Obtain the default map types from the platform object:
@@ -111,8 +78,12 @@ function verificar() {
     // Get an instance of the geocoding service:
     var geocoder = platform.getGeocodingService();
   }
-
 }
+
+
+
+
+
 
 
 
