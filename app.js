@@ -9,6 +9,7 @@ function verificar() {
   var estado = document.getElementById("estado").value;
   var date = document.getElementById("date").value;
   var options = document.getElementById("options").value;
+  var title = document.querySelector("h1.title").value;
 
   var resultado_name = document.querySelector("div#resultado-name");
   var resultado_email = document.querySelector("div#resultado-email");
@@ -16,11 +17,12 @@ function verificar() {
   var resultado_cidade = document.querySelector("div#resultado-cidade");
   var resultado_data = document.querySelector("div#resultado-data");
   var resultado_tipo = document.querySelector("div#resultado-tipo");
-
+  var title_ocorrencia = document.querySelector("h1.title")
 
   if (first_name == '') {
     alert('Error! Você não preencheu todos os dados.')
   } else {
+    title_ocorrencia.innerHTML = `SUA OCORRÊNCIA FOI REGISTRADA`
     resultado_name.innerHTML = `Nome registrado: <p class="dados">  ${first_name} ${last_name} </p>`;
     resultado_email.innerHTML = `E-mail registrado: <p class="dados"> ${email} </p>`;
     resultado_endereco.innerHTML = `Endereço registrado: <p class="dados"> ${address} / Bairro: ${bairro} </p>`
@@ -38,7 +40,7 @@ function verificar() {
 
     // MAPA DE GEOLOCALIZAÇÃO
     var platform = new H.service.Platform({
-      'apikey': '23WFpg6KbBx4okWUiocHyOzx_u_gICAFVNKQ93a-_d8'
+      'apikey': 'O4oWmp-htCMAOzx5kLBX_jnz0mcd12Vv39brKWaT8w0'
     });
 
     // Obtain the default map types from the platform object:
