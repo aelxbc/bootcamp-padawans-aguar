@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj": {}
   },
   "projects": {
-    "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
         "projectName": "Aguar.API",
-        "projectPath": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

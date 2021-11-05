@@ -1011,11 +1011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\aguar.API.csproj",
-      "projectName": "aguar.API",
-      "projectPath": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\aguar.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
+      "projectName": "Aguar.API",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

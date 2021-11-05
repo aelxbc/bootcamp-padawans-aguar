@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Aguar</title>
+
+    <link href="/CSS/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="baform">
+        <h1> Formulário de Ocorrência</h1>
+    </div>
+    <div class="main">
+
+        <form action="" id="form">
+
+            <div>
+                <h2 class="name">Nome</h2>
+                <input id="first_name" class="firstname" type="text" name="first_name" recquired placeholder="Nome"><br>
+                <input id="last_name" class="lastname" type="text" name="last_name" recquired placeholder="Sobrenome">
+
+            </div>
+
+            <div>
+                <h2 class="name"> E-mail </h2>
+                <input id="email" class="email" type="text" name="email" recquired placeholder="E-mail">
+            </div>
+
+            <div id="name">
+                <h2 class="name"> Endereço </h2>
+                <input id="address" class="address" type="text" name="address" recquired placeholder="Rua/Avenida">
+                <br>
+                <input id="bairro" class="block" type="text" name="bairro" recquired placeholder="Bairro">
+
+            </div>
+
+            <div id="name">
+                <h2 class="name"> Cidade/Estado </h2>
+                <input id="city" class="city" type="text" name="city" recquired placeholder="Cidade">
+                <br>
+                <input id="estado" class="state" type="text" name="estado" recquired placeholder="Estado">
+
+            </div>
+
+            <div id="name">
+                <h2 class="name">Data e Hora Ocorrência(*)</h2>
+                <input type="datetime-local" value="?php echo data('d-m-Y');?>" class="date" id="date"
+                    requiredplaceholder="">
+            </div>
+
+            <div id="name">
+                <h2 class="name">Tipos de Ocorrência(*)</h2>
+                <select id="options" class="types">
+                    <option selected>Escolha...</option>
+                    <option value="Vazamento de Água">Vazamento de água</option>
+                    <option value="Água Contaminada">Água Contaminada</option>
+                    <option value="Falta de Água">Falta de Água</option>
+                </select>
+            </div>
+
+                <div class="button">
+        <input class="button-input" type="submit" onclick="verificar()" />
+    </div>
+
+        </form>
+
+    </div>
+
+    <div id="resultados">
+        <div id="resultado-name"></div>
+        <div id="resultado-email"></div>
+        <div id="resultado-endereco"></div>
+        <div id="resultado-cidade"></div>
+        <div id="resultado-data"></div>
+        <div id="resultado-tipo"></div>
+        <div id="mapContainer"></div>
+    </div>
+
+    <script src="/Js/app.js"></script>
+
+</body>
+
+</html>

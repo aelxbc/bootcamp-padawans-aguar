@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url(/CSS/img/water.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.baform {
+    width: 800px;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 800px;
+    margin: auto;
+}
+
+form {
+    padding: 10px;
+}
+
+#name {
+    width: 100%;
+    height: 100px;
+}
+
+.name {
+    margin-left: 25px;
+    margin-top: 0px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.firstname {
+    position: relative;
+    left: 200px;
+    top: 10px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.lastname {
+    position: relative;
+    left: 460px;
+    top: -34px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.lastlable {
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 203px;
+    top: -45px;
+}
+
+.email {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.address {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.block {
+    position: relative;
+    left: 460px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.city {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.state {
+    position: relative;
+    left: 460px;
+    top: -81px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.date {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.types {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.button {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-input {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    transition: .7s;
+    border-radius: 25px;
+}
+
+.button-input:hover {
+    transform: translateY(-0.5em);
+    cursor: pointer;
+    background-color: rgb(116, 116, 116);
+    color: #FFF;
+}
+
+#resultados {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#mapContainer {
+    width: 640px; 
+    height: 480px; 
+    margin-top: 20px;
+}

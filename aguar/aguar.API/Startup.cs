@@ -53,6 +53,11 @@ namespace Aguar.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Aguar.API v1"));
             }
 
+
+            app.UseDefaultFiles();
+           
+            app.UseStaticFiles();
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();

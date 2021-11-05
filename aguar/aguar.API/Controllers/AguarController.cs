@@ -18,8 +18,8 @@ namespace Aguar.API.Controllers
 
 
 
-        // GET: api/tarefas
-        [HttpGet]
+        // GET: api/formulario
+        [HttpGet"Todos"]
         public IActionResult Get()
         {
             var formulario = _formularioRepository.Buscar();
@@ -27,8 +27,8 @@ namespace Aguar.API.Controllers
         }
 
         // GET api/tarefas/{id}
-        [HttpGet("{id}")]
-        public IActionResult Get(string id)
+        [HttpGet("Buscar{id}")]
+        public IActionResult Buscar(string id)
         {
 
 
@@ -39,8 +39,8 @@ namespace Aguar.API.Controllers
             return Ok(formulario);
         }
 
-        // POST api/tarefas/{id}
-        [HttpPost]
+        // POST api/formulario/{id}
+        [HttpPost"Inserir"]
         public IActionResult Post([FromBody] FormularioInputModel novaformulario)
         {
             var formulario = new Formulario(novaformulario.Nome,novaformulario.Email, novaformulario.Detalhes, novaformulario.Endereco, novaformulario.Foto);
@@ -50,8 +50,8 @@ namespace Aguar.API.Controllers
             return Created("", formulario);
         }
 
-        // PUT api/tarefas/{id}
-        [HttpPut("{id}")]
+        // PUT api/formulario/{id}
+        [HttpPut("Atualizar{id}")]
         public IActionResult Put(string id, [FromBody] FormularioInputModel formularioAtualizada)
         {
 
@@ -67,8 +67,8 @@ namespace Aguar.API.Controllers
 
         }
 
-        // DELETE api/tarefas/{id}
-        [HttpDelete("{id}")]
+        // DELETE api/formulario/{id}
+        [HttpDelete("Excluir{id}")]
         public IActionResult Delete(string id)
         {
             var formulario = _formularioRepository.Buscar(id);

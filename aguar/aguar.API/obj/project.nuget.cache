@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/XOQINkZy4ZjqEmakA8nc03pcWbDoLiyfGmNeft8kv4N1aIL+sYqPfP6SC37wMe8kVSUF2wqYL5Oe2ucLx8l4A==",
+  "dgSpecHash": "benZbrkCLGry/MJSMgWCP05PPRkJTfaawRLEly8H9NessZXc9Cwd6eoDeF2O0RZGFkaLTBdesMPbDfaLtlp39g==",
   "success": true,
-  "projectFilePath": "C:\\Project\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\bootcamp-padawans-aguar\\aguar\\aguar.API\\Aguar.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.11\\microsoft.aspnetcore.authentication.jwtbearer.5.0.11.nupkg.sha512",
