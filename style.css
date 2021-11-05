@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/img/water);
+    background-image: url(/img/water.jpg);
     background-position: center;
     background-size: cover;
     font-family: sans-serif;
@@ -26,18 +26,17 @@ p.copyright {
 
 .baform {
     width: 800px;
-    background-color: rgb(0, 0, 0, 0.5);
     margin: auto;
     color: #ffffff;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    border-radius: 15px 15px 0px 0px;
 }
 
 .main {
     background-color: rgb(0, 0, 0, 0.5);
     width: 800px;
     margin: auto;
+    border-radius: 20px;
 }
 
 form {
@@ -188,8 +187,16 @@ form {
 }
 
 #resultados {
+    display: block;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 20px; 
+    border-radius: 25px;   
 }
 
 #mapContainer {

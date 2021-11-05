@@ -11,18 +11,34 @@
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Aguar</title>
-
+    <link rel="stylesheet" href="header.css">
     <link href="style.css" rel="stylesheet">
+    <title>Aguar</title>
 
 </head>
 
 <body>
 
-    <div class="baform">
-        <h1> Formulário de Ocorrência</h1>
-    </div>
+    <header id="header">
+        <div id="nav">
+            <a href="index.html">
+                <nav class="item">Home</nav>
+            </a>
+            <a href="conhecaProjeto.html">
+                <nav class="item">Conheça o projeto</nav>
+            </a>
+            <a href="sobre.html">
+                <nav class="item">Sobre</nav>
+            </a>
+        </div>
+    </header>
+
+
     <div class="main">
+
+        <div class="baform">
+            <h1> Formulário de Ocorrência</h1>
+        </div>
 
         <form action="" id="form">
 
@@ -70,21 +86,25 @@
                 </select>
             </div>
 
-                <div class="button">
-        <input class="button-input" type="submit" onclick="verificar()" />
-    </div>
+            <div class="button">
+                <input class="button-input" type="submit" onclick="verificar()" />
+            </div>
 
         </form>
 
     </div>
 
     <div id="resultados">
+        <h1 class="title">SUA OCORRÊNCIA FOI REGISTRADA</h1>
         <div id="resultado-name"></div>
         <div id="resultado-email"></div>
         <div id="resultado-endereco"></div>
         <div id="resultado-cidade"></div>
         <div id="resultado-data"></div>
         <div id="resultado-tipo"></div>
+    </div>
+
+    <div id="mapa">
         <div id="mapContainer"></div>
     </div>
 

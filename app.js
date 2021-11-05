@@ -21,12 +21,12 @@ function verificar() {
   if (first_name == '') {
     alert('Error! Você não preencheu todos os dados.')
   } else {
-    resultado_name.innerHTML = `Seu nome é: ${first_name} ${last_name}`;
-    resultado_email.innerHTML = `Seu e-mail é: ${email}`;
-    resultado_endereco.innerHTML = `Seu endereço é: ${address} ${bairro}`
-    resultado_cidade.innerHTML = `Sua cidade e estado é: ${city} ${estado}`
-    resultado_data.innerHTML = `A data e hora que realizou a sua ocorrência foi: ${date}`
-    resultado_tipo.innerHTML = `O tipo de ocorrência que você selecionou foi: ${options}`
+    resultado_name.innerHTML = `Nome registrado: <p class="dados">  ${first_name} ${last_name} </p>`;
+    resultado_email.innerHTML = `E-mail registrado: <p class="dados"> ${email} </p>`;
+    resultado_endereco.innerHTML = `Endereço registrado: <p class="dados"> ${address} / Bairro: ${bairro} </p>`
+    resultado_cidade.innerHTML = `Cidade/Estado registrado: <p class="dados"> ${city} / ${estado} </p>`
+    resultado_data.innerHTML = `Data e Hora registrada: <p class="dados"> ${date}`
+    resultado_tipo.innerHTML = `Tipo de ocorrência registrada: <p class="dados"> ${options} </p>`
 
     const form = document.getElementById('form')
     form.addEventListener("submit", function (event) {
@@ -38,7 +38,7 @@ function verificar() {
 
     // MAPA DE GEOLOCALIZAÇÃO
     var platform = new H.service.Platform({
-      'apikey': 'KOxR0V1cxQt2Ve3S55hQ0xaah8RWo1NJefJ4t2F8CJ0'
+      'apikey': '23WFpg6KbBx4okWUiocHyOzx_u_gICAFVNKQ93a-_d8'
     });
 
     // Obtain the default map types from the platform object:
